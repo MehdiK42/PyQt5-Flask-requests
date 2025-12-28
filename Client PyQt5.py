@@ -75,9 +75,9 @@ class Uygulama(QWidget):
                 ax = self.fig.add_subplot(111, projection='3d')
                 
                 
-                ax.plot(boylamlar, irtifalar, enlemler, marker='o')
-                ax.set_xlabel('Boylam')
-                ax.set_ylabel('İrtifa')
+                ax.plot(irtifalar, boylamlar, enlemler, marker='o')
+                ax.set_xlabel('İrtifa')
+                ax.set_ylabel('Boylam')
                 ax.set_zlabel('Enlem')
                 
                 self.canvas.draw()
